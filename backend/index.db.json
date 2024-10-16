@@ -1,0 +1,48 @@
+[
+    {
+      "id": 1,
+      "isNew": true,
+      "imageURL": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4600&q=80",
+      "name": "Wayfarer Classic",
+      "price": 4.5,
+      "rating": 4.2,
+      "numReviews": 34
+    },
+    {
+      "id": 2,
+      "isNew": false,
+      "imageURL": "https://images.unsplash.com/photo-1601047662171-e6d1b4a55df9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80",
+      "name": "Aviator Sunglasses",
+      "price": 5.0,
+      "rating": 4.8,
+      "numReviews": 54
+    },
+    {
+      "id": 3,
+      "isNew": false,
+      "imageURL": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "name": "Sport Sunglasses",
+      "price": 3.9,
+      "rating": 4.5,
+      "numReviews": 21
+    },
+    {
+      "id": 4,
+      "isNew": true,
+      "imageURL": "https://images.unsplash.com/photo-1591076482161-16a92a68e2f0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      "name": "Retro Square Sunglasses",
+      "price": 6.0,
+      "rating": 4.7,
+      "numReviews": 48
+    },
+    {
+      "id": 5,
+      "isNew": false,
+      "imageURL": "https://images.unsplash.com/photo-1542293787932-c9e299b8809f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80",
+      "name": "Round Sunglasses",
+      "price": 5.2,
+      "rating": 4.3,
+      "numReviews": 29
+    }
+  ]
+  
