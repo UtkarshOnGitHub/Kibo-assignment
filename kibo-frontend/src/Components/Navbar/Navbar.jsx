@@ -7,6 +7,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
+  Image,
 } from '@chakra-ui/react'
 import { FaMoon } from "react-icons/fa";
 import { FiSun } from 'react-icons/fi';
@@ -19,7 +20,7 @@ export default function Nav() {
     <>
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
+          <Box><Image src="https://kibocommerce.com/wp-content/uploads/2022/12/logo-kibo-ForDarkBG.svg"/></Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
