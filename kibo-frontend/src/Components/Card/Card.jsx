@@ -56,7 +56,7 @@ function SingleCard({data}) {
           <Circle size="10px" position="absolute" top={2} right={2} bg="red.200" />
         )}
 
-        <Image src={data.img} height="250px" w="100%" objectFit={"cover"} alt={`Picture of ${data.title}`} roundedTop="lg" />
+        <Image src={data.img} height="250px" w="100%" alt={`Picture of ${data.title}`} roundedTop="lg" />
 
         <Box p="6">
           <Flex mt="1" justifyContent="space-between" alignContent="center">
