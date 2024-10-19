@@ -7,6 +7,7 @@ import MobileFilterSection from '../FilterSection/MobileFilterSection';
 
 const getData = async () => {
     let res = await fetch("https://kibo-assignment.onrender.com/");
+    // let res = await fetch("http://localhost:8080/");
     let data = await res.json();
     return data;
 };
