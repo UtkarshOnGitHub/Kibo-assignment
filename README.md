@@ -1,6 +1,6 @@
-# Kibo Frontend Project
+# Kibo Assignment Project
 
-This repository contains the **Kibo Frontend** project. The project is split into two parts: **Frontend** and **Backend**.
+This repository contains the **Kibo Assignment** project. The project is split into two parts: **Frontend** and **Backend**.
 
 Tech Stack Used:
 
