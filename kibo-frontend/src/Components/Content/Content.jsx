@@ -1,4 +1,4 @@
-import { Box, SimpleGrid, Image } from '@chakra-ui/react';
+import { Box, SimpleGrid, Image, Text, Container, Spinner } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import FilterSection from '../FilterSection/FilterSection';
 import PaginationContainer from '../Pagination/Pagination';
@@ -17,15 +17,20 @@ const ProductsDisplay = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const pageSize = 8;
     const [totalPage, setTotalPage] = useState(1);
+    const [loader,setLoader] = useState(false)
 
     useEffect(() => {
+        setLoader(true)
         getData()
             .then((res) => {
                 setData(res);
+                setLoader(false)
                 setFilteredData(res);
                 setTotalPage(Math.ceil(res.length / pageSize));
             })
             .catch((err) => {
+                setLoader(false)
+                setData([]);
                 console.error(err);
             });
     }, []);
@@ -57,6 +62,8 @@ const ProductsDisplay = () => {
         setTotalPage(Math.ceil(filteredProducts.length / pageSize));
     };
 
+
+
     return (
         <>
             <Box style={{ display: "flex", justifyContent: "space-between", marginTop: "20px", gap: "50px", padding: "20px" }} flexDirection={{base:"column",md:"row"}}>
@@ -66,7 +73,17 @@ const ProductsDisplay = () => {
                 <Box  display={{ base: 'block', md: 'none' }}>
                     <MobileFilterSection data={data} onFilter={handleFilter}/>
                 </Box>
-                {paginatedData.length ? (
+                {loader ? (
+                    <Container>
+                        <Spinner
+                            thickness='4px'
+                            speed='0.65s'
+                            emptyColor='gray.200'
+                            color='blue.500'
+                            size='xl'
+                            />
+                    </Container>
+                ) : paginatedData.length ? (
                     <SimpleGrid columns={[1, 2, 3, 4]} gap={2} w="100%">
                         {paginatedData.map((e) => (
                             <SingleCard key={e._id} data={e} />
