@@ -2,6 +2,12 @@
 
 This repository contains the **Kibo Frontend** project. The project is split into two parts: **Frontend** and **Backend**.
 
+Tech Stack Used:
+
+- **Frontend** : React JS , Chakra UI , React Icons
+- **Backend** : Node , Express , Nodemon
+
+
 ## Prerequisites
 
 Make sure you have the following installed on your machine:
@@ -16,7 +22,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository and navigate to the frontend project directory:
 
     ```bash
-    git clone https://github.com/your-username/kibo-frontend.git
+    git clone https://github.com/your-username/Kibo-assignment.git
     cd kibo-frontend
     ```
 
@@ -54,7 +60,7 @@ Make sure you have the following installed on your machine:
     npm run dev
     ```
 
-   The backend server will typically run at [http://localhost:5000](http://localhost:5000).
+   The backend server will typically run at [http://localhost:8080](http://localhost:8080).
 
 ---
 
