@@ -56,14 +56,14 @@ function SingleCard({data}) {
           <Circle size="10px" position="absolute" top={2} right={2} bg="red.200" />
         )}
 
-        <Image src={data.img}     height="250px" w="100%" objectFit={"cover"} alt={`Picture of ${data.title}`} roundedTop="lg" />
+        <Image src={data.img} height="250px" w="100%" objectFit={"cover"} alt={`Picture of ${data.title}`} roundedTop="lg" />
 
         <Box p="6">
           <Flex mt="1" justifyContent="space-between" alignContent="center">
             <Box
-              fontSize="2xl"
+              fontSize="1xl"
               fontWeight="semibold"
-              as="h4"
+              as="h5"
               lineHeight="tight"
               isTruncated>
               {data.title}
@@ -77,7 +77,7 @@ function SingleCard({data}) {
               <chakra.a href={'#'} display={'flex'}>
                 <Icon as={FiShoppingCart} h={7} w={7} alignSelf={'center'} />
               </chakra.a>
-            </Tooltip>
+           </Tooltip>
           </Flex>
 
           <Flex justifyContent="space-between" alignContent="center">

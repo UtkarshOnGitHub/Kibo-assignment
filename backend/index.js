@@ -2,8 +2,7 @@ const express = require('express')
 const cors = require('cors');
 const PORT =  8080
 const app = express();
-const data = require('./index.db.json');
-
+const data = require("./index.db.json")
 
 app.use(cors())
 app.use(express.urlencoded({extended: true}))

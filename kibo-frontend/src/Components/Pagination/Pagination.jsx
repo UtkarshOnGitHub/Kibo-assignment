@@ -9,11 +9,14 @@ const PaginationContainer = ({ data, currentPage, pageSize, onPageChange,totalPa
     <Flex
       as="nav"
       aria-label="Pagination"
-      w="full"
+      w="80%"
       justifyContent="center"
       alignItems="center"
       mt={{ base: 3, md: 0 }}
-      mb={4}
+      
+      flexWrap={"wrap"}
+      margin={"auto"}
+      marginBottom={"20px"}
     >
       {new Array(totalPages).fill(1).map((_, index) => {
         const pageNumber = index + 1;
